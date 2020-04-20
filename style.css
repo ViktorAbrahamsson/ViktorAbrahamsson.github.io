@@ -81,6 +81,7 @@ main {
   padding: 2rem;
   height: 60vh;
   margin-top: 4rem;
+  z-index: 1;
 }
 .landing-desc h1 {
   font-size: 2rem;
