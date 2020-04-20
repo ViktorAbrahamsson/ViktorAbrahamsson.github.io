@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Viktor Abrahamsson</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <header class="nav-header">
+      <h1><a href="./index.html" id="logo">Portfolio</a></h1>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </header>
+    <main>
+      <section class="landing-section">
+        <div class="landing-desc">
+          <h1>Hey, I'm Viktor Abrahamsson.</h1>
+          <h2>My passion is creating, and constant improving myself.</h2>
+          <p>
+            Currently studying last year of webdevelopment at Högskolan i
+            Skövde.
+          </p>
+        </div>
+      </section>
+      <section class="projects-section">
+        <div class="projects">
+          <h1>Projects</h1>
+          <div class="project">
+            <h2>Heatmaps</h2>
+            <p>Visualization with D3.js, Heatmap.js & Vue.js</p>
+            <img src="./images/heatmapjs.png" alt="Heatmaps Image" />
+            <a
+              class="btn heatmap-project"
+              href="./heatmap/index.html"
+              target="_blank"
+              >Go to</a
+            >
+          </div>
+          <div class="project">
+            <h2>Static Website</h2>
+            <p>Website for Härensten Ab with Vue.js</p>
+            <img src="./images/harensfvo.png" alt="Static Website Image" />
+            <a
+              class="btn static-project"
+              href="https://www.harensfvo.se/"
+              target="_blank"
+              >Go to</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="about">
+          <h1>About</h1>
+          <img src="./images/viktor.jpg" alt="Viktor Abrahamsson" />
+          <div class="about-desc">
+            <p>
+              Born & raised in <span>Gnosjö</span>, Småland, Sweden and studied
+              Technology with alignment of programming in High School. 2017 I
+              got accepted into University of Skövde and started studying
+              <span>Webdevelopment - Programming</span>. The education will end
+              june 2020 and I am now exploring options in my next step in my
+              career.
+            </p>
+            <p>
+              I love to learn new things and work together with new people to
+              create websites that makes a difference. One more thing that I
+              love is <span>Frontend-development</span> and a dream is to be a
+              part of creating the next generation of website designs.
+            </p>
+            <p>
+              During the warmer months in Sweden I love to be outside in the sun
+              to <span>excercie and socializing</span> with friends and family.
+              This is necessary because I often end up behind the computer
+              screen the rest of the months. I’m a
+              <span>passionate gamer</span> which has had a huge impact on who I
+              am today, more on that is for a later day!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>Viktor Abrahamsson</h3>
+      <a class="btn resume">Download Resume [ PDF ]</a>
+      <div class="social-media">
+        <div>
+          <a
+            href="https://github.com/viktorAbrahamsson"
+            class="social-media-button"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <div>
+          <a
+            href="mailto:wicke.abrahamsson@gmail.com"
+            class="social-media-button"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/viktor-abrahamsson-51ba091a1/"
+            class="social-media-button"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <h3>Home.</h3>
+        <h3>Projects.</h3>
+        <h3>About.</h3>
+      </ul>
+      <div class="contact">
+        <h2>Stay in touch.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          deleniti animi dolorum tenetur ea tempore eum pariatur, nobis
+          reiciendis quaerat.
+        </p>
+      </div>
+    </nav>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
