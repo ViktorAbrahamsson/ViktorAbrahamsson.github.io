@@ -61,6 +61,10 @@ main {
 }
 
 /* Burger-menu */
+.burger {
+  cursor: pointer;
+}
+
 .line1,
 .line2,
 .line3 {
@@ -180,4 +184,20 @@ footer a {
 .social-media-button {
   color: #fff;
   font-size: 2rem;
+}
+
+/* Nav */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  background: #fff;
+  color: #000;
+  /* transform: translateX(350px); */
+  z-index: 3;
 }
