@@ -41,6 +41,7 @@ main {
   width: 100%;
   height: 100vh;
   background: linear-gradient(180deg, #0042e6 -14.16%, #100e17 100%);
+  background: -webkit-gradient(180deg, #0042e6 -14.16%, #100e17 100%);
   position: absolute;
   z-index: -1;
 }
