@@ -198,6 +198,6 @@ footer a {
   width: 80%;
   background: #fff;
   color: #000;
-  /* transform: translateX(350px); */
+  transform: translateX(350px);
   z-index: 3;
 }
