@@ -1,4 +1,6 @@
 const navBurger = document.querySelector(".burger");
+const landingSection = document.querySelector(".landing-section");
+const projectSection = document.querySelector(".projects-section");
 
 const toggleNav = (e) => {
   if (!e.target.classList.contains("active")) {
@@ -11,6 +13,8 @@ const toggleNav = (e) => {
     gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "black" });
     gsap.to("#logo", 1, { color: "black" });
     gsap.to(".nav-bar", 1, { clipPath: "circle(1500px at 100% -10%)" });
+    landingSection.style.pointerEvents = "none";
+    projectSection.style.pointerEvents = "none";
   } else {
     e.target.classList.remove("active");
     document.body.classList.remove("hide");
@@ -19,6 +23,8 @@ const toggleNav = (e) => {
     gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
     gsap.to("#logo", 1, { color: "white" });
     gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
+    landingSection.style.pointerEvents = "all";
+    projectSection.style.pointerEvents = "all";
   }
 };
 
