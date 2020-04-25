@@ -26,5 +26,25 @@ const toggleNav = (e) => {
   }
 };
 
+// ScrollMagic
+var controller = new ScrollMagic.Controller();
+let fromLeftTimeline = new TimelineMax();
+let fromLeftFrom = TweenMax.from(".project", 1, {
+  autoAlpha: 0,
+  x: -40,
+});
+let fromLeftTo = TweenMax.to(".project", 1, {
+  autoAlpha: 1,
+  x: 0,
+});
+fromLeftTimeline.add(fromLeftFrom).add(fromLeftTo);
+new ScrollMagic.Scene({
+  triggerElement: ".projects",
+})
+  .setTween(fromLeftTimeline)
+  .duration(400)
+  .addIndicators()
+  .addTo(controller);
+
 // Event Listeners
 navBurger.addEventListener("click", toggleNav);
