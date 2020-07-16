@@ -290,6 +290,10 @@ footer a {
   .project img {
     height: 420px;
   }
+
+  .about {
+    width: 45%;
+  }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
