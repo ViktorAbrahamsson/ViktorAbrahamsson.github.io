@@ -3,6 +3,9 @@ const navLink1 = document.querySelector(".link1");
 const navLink2 = document.querySelector(".link2");
 const navLink3 = document.querySelector(".link3");
 
+const landingSection = document.querySelector(".landing-section");
+const projectSection = document.querySelector(".projects-section");
+
 const toggleNav = (e) => {
   if (!e.target.classList.contains("active")) {
     // Open Nav
@@ -13,6 +16,7 @@ const toggleNav = (e) => {
     gsap.to(".line1", 0.5, { rotate: "45", y: 5, background: "black" });
     gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "black" });
     gsap.to("#logo", 1, { color: "black" });
+    gsap.to(".nav-header", 0, { background: "white" });
     gsap.to(".nav-bar", 1, { clipPath: "circle(1500px at 100% -10%)" });
     projectSection.style.pointerEvents = "none";
   } else {
@@ -22,7 +26,9 @@ const toggleNav = (e) => {
     gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "white" });
     gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
     gsap.to("#logo", 1, { color: "white" });
+
     gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
+    gsap.to(".nav-header", 0.4, { background: "#0338be" });
     projectSection.style.pointerEvents = "all";
   }
 };
@@ -35,6 +41,7 @@ const toggleWithLink = () => {
   gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
   gsap.to("#logo", 1, { color: "white" });
   gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
+  gsap.to(".nav-header", 0.4, { background: "#0338be" });
   projectSection.style.pointerEvents = "all";
 };
 
@@ -103,3 +110,26 @@ navBurger.addEventListener("click", toggleNav);
 navLink1.addEventListener("click", toggleWithLink);
 navLink2.addEventListener("click", toggleWithLink);
 navLink3.addEventListener("click", toggleWithLink);
+
+// Hide/reveal menu - https://codepen.io/Mhmdhasan/pen/mAdaQE
+$(document).ready(function () {
+  "use strict";
+
+  var c,
+    currentScrollTop = 0,
+    navbar = $(".nav-header");
+
+  $(window).scroll(function () {
+    var a = $(window).scrollTop();
+    var b = navbar.height();
+
+    currentScrollTop = a;
+
+    if (c < currentScrollTop && a > b + b) {
+      navbar.addClass("scrollUp");
+    } else if (c > currentScrollTop && !(a <= b)) {
+      navbar.removeClass("scrollUp");
+    }
+    c = currentScrollTop;
+  });
+});

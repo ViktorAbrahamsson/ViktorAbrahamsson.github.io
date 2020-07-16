@@ -71,6 +71,21 @@ main {
   -webkit-clip-path: circle(50px at 100% -10%);
 }
 
+.nav-links a {
+  color: #000;
+  background-image: linear-gradient(transparent calc(100% - 2px), #000 1px);
+  text-decoration: none;
+  background-size: 100% 100%;
+  background-position: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+}
+
+.nav-links a:hover {
+  background-size: 0 100%;
+}
+
 .burger {
   cursor: pointer;
   position: relative;
@@ -93,11 +108,19 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  margin: auto;
-  padding: 2rem 0rem;
+  width: 100%;
+  padding: 0 20px;
   z-index: 2;
-  position: relative;
+  transition: all 0.5s;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #0338be;
+  border-bottom: 3px solid #fff;
+}
+
+.nav-header.scrollUp {
+  transform: translateY(-10vh);
 }
 
 .landing-desc {
@@ -107,8 +130,8 @@ main {
   text-align: center;
   position: relative;
   padding: 2rem;
-  height: 55vh;
-  margin-top: 4rem;
+  height: 60vh;
+  margin-top: 10rem;
 }
 .landing-desc h1 {
   font-size: 2rem;
@@ -141,7 +164,6 @@ main {
   line-height: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  z-index: 2;
 }
 .project h2 {
   color: #1e90ff;
