@@ -28,22 +28,62 @@ const toggleNav = (e) => {
 
 // ScrollMagic
 var controller = new ScrollMagic.Controller();
-let fromLeftTimeline = new TimelineMax();
-let fromLeftFrom = TweenMax.from(".project", 1, {
+
+// Scene 1 - Project 1
+let tween1 = new TimelineMax();
+let project1Start = TweenMax.from("#project1", 1, {
   autoAlpha: 0,
   x: -40,
 });
-let fromLeftTo = TweenMax.to(".project", 1, {
+let project1End = TweenMax.to("#project1", 1, {
   autoAlpha: 1,
   x: 0,
 });
-fromLeftTimeline.add(fromLeftFrom).add(fromLeftTo);
+tween1.add(project1Start).add(project1End);
 new ScrollMagic.Scene({
-  triggerElement: ".projects",
+  triggerElement: "#project1",
 })
-  .setTween(fromLeftTimeline)
+  .setTween(tween1)
   .duration(400)
-  .addIndicators()
+  // .addIndicators()
+  .addTo(controller);
+
+// Scene 2 - Project 2
+let tween2 = new TimelineMax();
+let tweenProject2Start = TweenMax.from("#project2", 1, {
+  autoAlpha: 0,
+  x: -40,
+});
+let tweenProject2End = TweenMax.to("#project2", 1, {
+  autoAlpha: 1,
+  x: 0,
+});
+tween2.add(tweenProject2Start).add(tweenProject2End);
+new ScrollMagic.Scene({
+  triggerElement: "#project2",
+})
+  .setTween(tween2)
+  .duration(400)
+  // .addIndicators()
+  .addTo(controller);
+
+// Scene 3 - About
+let tween3 = new TimelineMax();
+let tweenAboutStart = TweenMax.from(".about", 1, {
+  autoAlpha: 0,
+  x: -40,
+});
+let tweenAboutEnd = TweenMax.to(".about", 1, {
+  autoAlpha: 1,
+  x: 0,
+});
+tween3.add(tweenAboutStart).add(tweenAboutEnd);
+new ScrollMagic.Scene({
+  triggerElement: ".about",
+})
+  .setTween(tween3)
+  .duration(400)
+  // .addIndicators()
   .addTo(controller);
 
 // Event Listeners
