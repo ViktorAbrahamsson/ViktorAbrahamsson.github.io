@@ -148,6 +148,17 @@ main {
   line-height: 1rem;
   margin: 1rem 2rem 0rem 2rem;
 }
+.landing-section img {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 3px solid #1e90ff;
+}
+.desktop-img {
+  display: none;
+  pointer-events: none;
+}
 
 .projects {
   position: relative;
@@ -159,12 +170,11 @@ main {
   align-items: center;
   text-align: center;
 }
-.projects h1 {
-  font-size: 2rem;
-  line-height: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+
+.projects-section h1 {
+  text-align: center;
 }
+
 .project h2 {
   color: #1e90ff;
 }
@@ -232,4 +242,55 @@ footer a {
 .social-media-button {
   color: #fff;
   font-size: 2rem;
+}
+
+/* Media queries */
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .landing-desc {
+    text-align: start;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 75vh;
+  }
+  .landing-desc div {
+    margin-top: 15vh;
+  }
+  .landing-desc h2 {
+    margin-left: 0;
+  }
+  .landing-desc p {
+    margin-left: 0;
+  }
+  .desktop-img {
+    display: block;
+    pointer-events: all;
+  }
+
+  .projects-section h1 {
+    text-align: center;
+  }
+  .projects {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .project img {
+    height: 420px;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }
