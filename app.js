@@ -17,7 +17,7 @@ const toggleNav = (e) => {
     gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "black" });
     gsap.to("#logo", 1, { color: "black" });
     gsap.to(".nav-header", 0, { background: "white" });
-    gsap.to(".nav-bar", 1, { clipPath: "circle(1900px at 100% -10%)" });
+    gsap.to(".nav-bar", 1, { clipPath: "circle(2300px at 100% -10%)" });
     projectSection.style.pointerEvents = "none";
   } else {
     e.target.classList.remove("active");
