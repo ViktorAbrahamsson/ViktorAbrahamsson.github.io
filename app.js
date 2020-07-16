@@ -1,6 +1,7 @@
 const navBurger = document.querySelector(".burger");
-const landingSection = document.querySelector(".landing-section");
-const projectSection = document.querySelector(".projects-section");
+const navLink1 = document.querySelector(".link1");
+const navLink2 = document.querySelector(".link2");
+const navLink3 = document.querySelector(".link3");
 
 const toggleNav = (e) => {
   if (!e.target.classList.contains("active")) {
@@ -24,6 +25,17 @@ const toggleNav = (e) => {
     gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
     projectSection.style.pointerEvents = "all";
   }
+};
+
+const toggleWithLink = () => {
+  navBurger.classList.remove("active");
+  document.body.classList.remove("hide");
+  // GSAP Animations
+  gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "white" });
+  gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
+  gsap.to("#logo", 1, { color: "white" });
+  gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
+  projectSection.style.pointerEvents = "all";
 };
 
 // ScrollMagic
@@ -88,3 +100,6 @@ new ScrollMagic.Scene({
 
 // Event Listeners
 navBurger.addEventListener("click", toggleNav);
+navLink1.addEventListener("click", toggleWithLink);
+navLink2.addEventListener("click", toggleWithLink);
+navLink3.addEventListener("click", toggleWithLink);

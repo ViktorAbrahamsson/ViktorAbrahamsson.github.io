@@ -28,7 +28,7 @@
       </div>
     </header>
     <main>
-      <section class="landing-section">
+      <section class="landing-section" id="landing-section">
         <div class="landing-desc">
           <h1>Hey, I'm Viktor Abrahamsson.</h1>
           <h2>Work in progress website.</h2>
@@ -38,7 +38,7 @@
           </p>
         </div>
       </section>
-      <section class="projects-section">
+      <section class="projects-section" id="projects-section">
         <div class="projects">
           <h1>Projects</h1>
           <div class="project" id="project1">
@@ -65,9 +65,9 @@
           </div>
         </div>
       </section>
-      <section class="about-section">
+      <section class="about-section" id="about-section">
+        <h1>About</h1>
         <div class="about">
-          <h1>About</h1>
           <img src="./images/viktor.jpg" alt="Viktor Abrahamsson" />
           <div class="about-desc">
             <p>
@@ -132,9 +132,11 @@
 
     <nav class="nav-bar">
       <ul class="nav-links">
-        <h3>Home.</h3>
-        <h3>Projects.</h3>
-        <h3>About.</h3>
+        <h3><a class="links link1" href="#landing-section">Home.</a></h3>
+        <h3>
+          <a class="links link2" href="#projects-section">Projects.</a>
+        </h3>
+        <h3><a class="links link3" href="#about-section">About.</a></h3>
       </ul>
     </nav>
 

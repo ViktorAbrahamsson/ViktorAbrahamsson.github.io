@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Baloo Paaji 2", cursive;
   color: #fff;
@@ -155,6 +159,10 @@ main {
   text-decoration: none;
   cursor: pointer;
   margin: 1rem 0rem 3rem 0rem;
+}
+
+.about-section {
+  text-align: center;
 }
 
 .about {
