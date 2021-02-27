@@ -88,6 +88,12 @@ main {
   background-size: 0 100%;
 }
 
+.nav-links h3 {
+  font-size: xx-large;
+  height: 75px;
+}
+
+
 .burger {
   cursor: pointer;
   position: relative;
