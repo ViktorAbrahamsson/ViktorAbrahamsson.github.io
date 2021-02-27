@@ -28,7 +28,7 @@ const toggleNav = (e) => {
     gsap.to("#logo", 1, { color: "white" });
 
     gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
-    gsap.to(".nav-header", 0.4, { background: "#0338be" });
+    gsap.to(".nav-header", 0.4, { background: "#04040e" });
     projectSection.style.pointerEvents = "all";
   }
 };
@@ -41,7 +41,7 @@ const toggleWithLink = () => {
   gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
   gsap.to("#logo", 1, { color: "white" });
   gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
-  gsap.to(".nav-header", 0.4, { background: "#0338be" });
+  gsap.to(".nav-header", 0.4, { background: "#04040e" });
   projectSection.style.pointerEvents = "all";
 };
 
