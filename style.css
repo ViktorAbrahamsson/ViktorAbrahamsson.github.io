@@ -152,7 +152,6 @@ main {
 }
 .landing-desc div.social-media {
   justify-content:space-evenly;
-  width: 50%;
   margin: 0 auto;
   margin-top: 20px;
 }
