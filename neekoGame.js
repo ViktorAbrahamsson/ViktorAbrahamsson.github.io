@@ -52,7 +52,7 @@ function inputs() {
 }
 
 function drawBlob() {
-  ctx.fillStyle = "#0000ff"
+  ctx.fillStyle = "#7718aa"
   ctx.beginPath();
   ctx.arc(x,y, radius, 0, Math.PI*2)
   ctx.fill();
