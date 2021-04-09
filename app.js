@@ -86,8 +86,27 @@ new ScrollMagic.Scene({
   // .addIndicators()
   .addTo(controller);
 
-// Scene 3 - About
+// Scene 3 - Project 3
 let tween3 = new TimelineMax();
+let tweenProject3Start = TweenMax.from("#project3", 1, {
+  autoAlpha: 0,
+  x: -40,
+});
+let tweenProject3End = TweenMax.to("#project3", 1, {
+  autoAlpha: 1,
+  x: 0,
+});
+tween3.add(tweenProject3Start).add(tweenProject3End);
+new ScrollMagic.Scene({
+  triggerElement: "#project3",
+})
+  .setTween(tween3)
+  .duration(400)
+  // .addIndicators()
+  .addTo(controller);
+
+// Scene 4 - About
+let tween4 = new TimelineMax();
 let tweenAboutStart = TweenMax.from(".about", 1, {
   autoAlpha: 0,
   x: -40,
@@ -100,7 +119,7 @@ tween3.add(tweenAboutStart).add(tweenAboutEnd);
 new ScrollMagic.Scene({
   triggerElement: ".about",
 })
-  .setTween(tween3)
+  .setTween(tween4)
   .duration(400)
   // .addIndicators()
   .addTo(controller);
