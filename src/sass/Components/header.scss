@@ -1,0 +1,51 @@
+.site-header {
+  min-height: $header-height;
+  z-index: 50;
+  // background-color: $primary-dark;
+  background-color: transparent;
+  color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 5px 10px -10px #232931;
+  border-bottom: 1px solid $primary;
+
+  .container {
+    min-height: $header-height;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: auto;
+  }
+
+  &__nav {
+    ul {
+      min-height: $header-height;
+      gap: 28px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      
+      li {
+        height: $header-height;
+
+        a {
+          height: $header-height;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $white;
+
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
